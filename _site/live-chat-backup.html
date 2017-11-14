@@ -1,0 +1,43 @@
+<script><![CDATA[
+function sizeIframe(){
+		var wrapper = $('#live-chat-outer-wrapper');
+		var iframe = $(wrapper).find("iframe");
+		var w = $(wrapper).width();
+		var iw = 430;
+		if(iw > w){
+			var scalePercent = w / iw;
+			var actualIframeWidth = iw * scalePercent;
+			var leftOffset = Math.round((iw - actualIframeWidth)/2);
+			$(iframe).css({"transform":"scale("+scalePercent+")","-webkit-transform":"scale("+scalePercent+")","margin-left":"-"+ leftOffset + "px"});
+		}
+		else{
+			$(iframe).css({"transform":"scale(1.0)","-webkit-transform":"scale(1.0)","margin-left":"auto","margin-right":"auto"});
+		}
+	}
+	window.addEventListener("load", sizeIframe);
+	window.addEventListener("resize", sizeIframe); ]]>
+</script>
+<style>
+	#live-chat-iframe-wrapper{
+		display:none;
+
+	}
+	#live-chat-iframe-wrapper iframe{
+		margin-left: 0;
+		margin-right: 0;
+		display:block;
+	}
+    .zinrelo-tag{
+		display: none !important;
+	}
+</style>
+<div id="live-chat-outer-wrapper">
+<div onclick="$('#live-chat-iframe-wrapper').slideToggle()"><img src="https://data.shopgate.com/merchant_editor_images/24108/Pph43ZfbYrYddOaFZg52jCAXNXSEn7lDxtj63XR3eobs7FJo3uTGJkHn1vKNtA015rgQbi3xrLdO2FDUJyJ1KnABEhdaEhe15BYJD3jZWJnAn2qfeuROz1vZF55t8lOW" style="max-width: 100%; height: auto;" /></div>
+<div onclick="$('#live-chat-iframe-wrapper').slideToggle()"><span></span></div>
+<div onclick="$('#live-chat-iframe-wrapper').slideToggle()"><span>Have questions or need help? Our friendly and professional Ohio-based customer service will gladly assist you with anything from placing an order to help with a return, warranty guidelines, product information, the best shoe for your job and so much more. Our Online Chat is the best for an immediate response but we will get back to you within 72 hours if you choose to <span style="text-decoration: underline;"><a href="mailto:CustomerService@RockyBrands.com?subject=Customer%20Service%20Request&amp;body=" data-sg-link-id="111368">email us</a></span></span><span>. Be sure to scan though our FAQs&nbsp;</span><span>first to see if you find your answer there. Thanks for shopping SlipGrips.com.</span></div>
+<div onclick="$('#live-chat-iframe-wrapper').slideToggle()"></div>
+<div id="live-chat-trigger" onclick="$('#live-chat-iframe-wrapper').slideToggle()">Chat With Us</div>
+<div onclick="$('#live-chat-iframe-wrapper').slideToggle()"></div>
+<div onclick="$('#live-chat-iframe-wrapper').slideToggle()"></div>
+<div id="live-chat-iframe-wrapper" style="width: 430%;"><iframe src="http://webchat.rockybrands.net/WC_SlipGrips.php" height="450" width="430"></iframe></div>
+</div>

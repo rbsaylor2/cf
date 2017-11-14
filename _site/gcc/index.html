@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CustomFit - Managed Safety Shoe Programs</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons|Quicksand:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="http://localhost:4000/cf-redesign/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+    <a class="navbar-brand" href="http://localhost:4000/cf-redesign/"><img src="https://i.imgur.com/5qqMgem.png" alt="CustomFit"></a>
+    <div>Test</div>
+    <div class="text-white" style="font-weight: bold;"><i class="material-icons">settings</i></div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light container" style="width: 100%;">
+    <a class="navbar-brand" href="#"><img src="https://i.imgur.com/cr5TuHn.jpg" alt=""></a>
+    <h4 class="mr-auto">Test Account: <small>Test Full Line (028533/00002)</small><p style="margin: 0; padding: 0; font-weight: normal; font-size: 1em;">Data Test- PT-100 </p></h4>
+    <div class="text-center">
+      <button type="button" class="btn btn-secondary">Logout</button>
+      <a class="nav-link" href="http://localhost:4000/cf-redesign/es" style="padding: 0; color: #999;">Español</a>
+    </div>
+    <!-- <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div> -->
+  </nav>
+
+  <div class="container">
+    <h1>Global Command Center Dashboard</h1>
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 class="text-secondary">Utilization</h3>
+        <div class="progress">
+          <div class="progress-bar bg-green" role="progressbar" style="width: 96.4%; height: 24px; padding-top: 2px;" aria-valuenow="586" aria-valuemin="0" aria-valuemax="608">586 Eligible Employees</div>
+        </div>
+        <div class="m-3" style="margin: 0 auto; text-align: center;"><a class="btn btn-primary" href="#" role="button">Notify Employees</a></div>
+      </div>
+      <div class="col-sm-6">
+        <div class="list-group" style="margin: 0 auto;">
+          <h3 class="text-secondary">Eligible Soon</h3>
+          <a href="#" class="list-group-item bg-dark text-white">Eligible Next Week: <strong>3</strong></a>
+          <a href="#" class="list-group-item bg-dark text-white">Eligible Next Month: <strong>0</strong></a>
+        </div>
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="list-group col-sm-12 col-md-4">
+        <h2 class="text-secondary">Program Management</h2>
+        <!-- <a href="#" class="list-group-item list-group-item-action">Manage Global Program</a> -->
+        <a href="#" class="list-group-item list-group-item-action">Jump Station</a>
+        <a href="#" class="list-group-item list-group-item-action">Return History</a>
+        <a href="#" class="list-group-item list-group-item-action">Order History</a>
+        <a href="#" class="list-group-item list-group-item-action">Manage Posters</a>
+      </div>
+      <div class="list-group col-sm-12 col-md-4">
+        <h2 class="text-secondary">Reports</h2>
+        <a href="#" class="list-group-item list-group-item-action">Return History</a>
+        <a href="#" class="list-group-item list-group-item-action">Top Selling Styles</a>
+        <a href="#" class="list-group-item list-group-item-action">Top Producing Days</a>
+        <a href="#" class="list-group-item list-group-item-action">Employee Participation</a>
+      </div>
+      <div class="list-group col-sm-12 col-md-4">
+        <h2 class="text-secondary">Settings</h2>
+        <a href="#" class="list-group-item list-group-item-action">Communication Preferences</a>
+        <a href="#" class="list-group-item list-group-item-action">Change Password</a>
+        <a href="#" class="list-group-item list-group-item-action">Upload Logo</a>
+        <a href="#" class="list-group-item list-group-item-action">Reset All Employees</a>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-12">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="topstypes-tab" data-toggle="tab" href="#topstypes" role="tab" aria-controls="topstypes" aria-expanded="true">Top Styles YTD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="monthylsales-tab" data-toggle="tab" href="#monthylsales" role="tab" aria-controls="monthylsales">Monthly Sales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="quantity-tab" data-toggle="tab" href="#quantity" role="tab" aria-controls="quantity">Quantity YTD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="purchase-tab" data-toggle="tab" href="#purchase" role="tab" aria-controls="purchase">Purchase YTD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="subsidy-tab" data-toggle="tab" href="#subsidy" role="tab" aria-controls="subsidy">Subsidy Sales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="returns-tab" data-toggle="tab" href="#returns" role="tab" aria-controls="returns">Return History</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="topstypes" role="tabpanel" aria-labelledby="topstypes-tab">
+            Top Styles YTD
+            <img src="https://i.imgur.com/ci8HCj2.jpg" />
+          </div>
+          <div class="tab-pane fade" id="monthylsales" role="tabpanel" aria-labelledby="monthylsales-tab">
+            Monthly Sales
+            <img src="https://i.imgur.com/ci8HCj2.jpg" />
+          </div>
+          <div class="tab-pane fade" id="quantity" role="tabpanel" aria-labelledby="quantity-tab">
+            Quantity YTD
+            <img src="https://i.imgur.com/ci8HCj2.jpg" />
+          </div>
+          <div class="tab-pane fade" id="purchase" role="tabpanel" aria-labelledby="purchase-tab">
+            Quantity YTD
+            <img src="https://i.imgur.com/ci8HCj2.jpg" />
+          </div>
+          <div class="tab-pane fade" id="subsidy" role="tabpanel" aria-labelledby="subsidy-tab">
+            Quantity YTD
+            <img src="https://i.imgur.com/ci8HCj2.jpg" />
+          </div>
+          <div class="tab-pane fade" id="returns" role="tabpanel" aria-labelledby="returns-tab">
+            Quantity YTD
+            <img src="https://i.imgur.com/ci8HCj2.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chat-wrap">
+    <div class="chat">Click here to chat <i class="material-icons">chat_bubble</i></div>
+  </div>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+      $('.truncate').tooltip();
+    })
+  </script>
+</body>
+</html>
