@@ -57,7 +57,7 @@
           <input type="text" id="search" class="form-control">
           <span class="input-group-btn">
              <!-- <i class="material-icons">check</i> -->
-            <button class="btn btn-default color-primary" type="button">Search <i class="material-icons ml">search</i></button>
+            <button class="btn btn-default color-primary" type="button"><i class="material-icons" style="position: relative; top: 4px; font-size: 1.6em;">search</i></button>
           </span>
         </div>
       </div><!-- /.col-lg-6 -->
@@ -82,5 +82,8 @@
   $('.truncate').tooltip();
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-  })
+  });
+  $("#ex2").slider({
+    tooltip: 'always'
+  });
 </script>
