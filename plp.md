@@ -106,7 +106,7 @@ layout: shop
     <div class="row">
       <div class="col-sm-12">
         <div class="alert alert-primary alert-dismissible fade show" role="alert">
-          <strong>Need boots FAST?</strong> Check out the <a href="#" style="text-decoration: underline;">QuickFit</a> collection.
+          <strong>Need boots FAST?</strong> Check out the <a href="#" style="text-decoration: underline;">QuickFit</a> collection for FREE overnight shipping.
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -934,7 +934,7 @@ layout: shop
 
     <div class="row mt-4">
       <div class="col-sm-6 mr-auto">
-        Showing 24 of <strong>2713</strong> Products
+        Showing 25-48 of <strong>2713</strong> Products
       </div>
       <div class="col-sm-6">
         <nav aria-label="Page navigation example">
