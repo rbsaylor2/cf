@@ -5,7 +5,31 @@
 layout: shop
 ---
   <div class="container">
-    <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container" style="width: 100%;">
+      <a class="navbar-brand" href="#"><img src="https://i.imgur.com/cr5TuHn.jpg" alt=""></a>
+      <h4 class="mr-auto">Test Account: <small>Data Red (186586/00002)</small><p style="margin: 0; padding: 0; font-weight: normal; font-size: 1em;">Welcome Aaron (123456), you are eligible for safety shoes!</p></h4>
+      <div class="text-center">
+        <button type="button" class="btn btn-secondary">Logout</button>
+        <a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/es" style="padding: 0; color: #999;">Español</a>
+      </div>
+      <!-- <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div> -->
+    </nav>
+    <!-- <div class="row">
       <div class="col-md-4">
         <h2><label for="exampleInputEmail1">Filter &amp; Search</label></h2>
       </div>
@@ -17,14 +41,13 @@ layout: shop
           </span>
         </div>
       </div>
-    </div>
-    <div class="row mb-3">
+    </div> -->
+    <!-- <div class="row mb-3">
       <div class="col-sm-3">
         <div class="card text-center">
           <img class="card-img-top" src="https://i.imgur.com/5zyKAdr.jpg" alt="Man on utility pole">
           <div class="card-body m-2">
-            <!-- <h5>Shop By Occupation</h5> -->
-            <p class="card-text truncate">Food, healthcare, retail, steel, timber, and more!</p>
+            <p class="card-text">Food, healthcare, retail, steel, timber, and more!</p>
             <a href="#" class="btn color-primary mb-2">Shop Occupations</a>
           </div>
         </div>
@@ -33,8 +56,7 @@ layout: shop
         <div class="card text-center">
           <img class="card-img-top" src="https://i.imgur.com/YJOwt0y.jpg" alt="Footwear brand logos">
           <div class="card-body m-2">
-            <!-- <h5>Shop By Brand</h5> -->
-            <p class="card-text truncate">Select from Timberland, Rocky, Skechers, etc.</p>
+            <p class="card-text">Select from Timberland, Rocky, Skechers, etc.</p>
             <a href="#" class="btn color-primary mb-2">Shop Brands</a>
           </div>
         </div>
@@ -43,8 +65,7 @@ layout: shop
         <div class="card text-center">
           <img class="card-img-top" src="https://i.imgur.com/NxTZR4M.jpg" alt="Three panels of different footwear">
           <div class="card-body m-2">
-            <!-- <h5>Shop By Feature</h5> -->
-            <p class="card-text truncate">Protective toe, met-guard, slip-resistant, and many more.</p>
+            <p class="card-text">Protective toe, met-guard, slip-resistant, and many more.</p>
             <a href="#" class="btn color-primary mb-2">Shop Features</a>
           </div>
         </div>
@@ -53,25 +74,24 @@ layout: shop
         <div class="card text-center">
           <img class="card-img-top" src="https://i.imgur.com/Vu9Z7m6.jpg" alt="Three panels of boot and apparel styles">
           <div class="card-body m-2">
-            <!-- <h5>Shop By Style</h5> -->
-            <p class="card-text truncate">Athletic, casual, duty, outdoor, apparel, etc.</p>
+            <p class="card-text">Athletic, casual, duty, outdoor, apparel, etc.</p>
             <a href="#" class="btn color-primary mb-2">Shop Styles</a>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="row">
-      <div class="col-sm-2 mr-auto">
-        <strong>2713</strong> Products
+      <div class="col-sm-6 mr-auto">
+        Showing 25-48 of <strong>2713</strong> Products
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-6">
         <nav aria-label="Page navigation example">
-          <ul class="pagination justify-content-center">
+          <ul class="pagination justify-content-end">
             <li class="page-item disabled">
               <a class="page-link" href="#" tabindex="-1">Previous</a>
             </li>
             <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item"><a class="page-link" href="#">4</a></li>
             <li class="page-item"><a class="page-link" href="#">5</a></li>
@@ -84,114 +104,50 @@ layout: shop
       </div>
     </div>
     <div class="row">
+      <div class="col-sm-12">
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+          <strong>Need boots FAST?</strong> Check out the <a href="#" style="text-decoration: underline;">QuickFit</a> collection.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-sm-12 col-md-2">
-        <!-- <div>Quantity per page</div>
-        <div class="quantity btn-group" data-toggle="buttons">
-          <label class="btn btn-secondary active">
-            <input type="radio" name="options" id="option1" autocomplete="off" checked> 50
-          </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option2" autocomplete="off"> 75
-          </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option3" autocomplete="off"> 100
-          </label>
-        </div>
-        <div>Sort By</div>
-        <div class="list-group">
-          <a href="#" class="list-group-item text-light bg-secondary">Best Selling</a>
-          <a href="#" class="list-group-item list-group-item-action">Brand A-Z</a>
-          <a href="#" class="list-group-item list-group-item-action">Brand Z-A</a>
-        </div>
-        <div>Color</div>
-        <div class="color-grid">
-          <div class="color black"></div>
-          <div class="color white"></div>
-          <div class="color brown"></div>
-          <div class="color blue"></div>
-          <div class="color red"></div>
-          <div class="color other"></div>
-        </div>
-        <div>Price</div>
-        <input id="ex2" type="text" value="" data-slider-min="0" data-slider-max="400" data-slider-step="50" data-slider-value="[0,400]" data-slider-handle="square"/>
-        <div id="accordion" role="tablist">
-          <div class="card">
-            <div class="card-header" role="tab" id="headingOne">
-              <h5 class="mb-0">
-                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Brand
-                </a>
-              </h5>
-            </div>
-
-            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-              <div class="card-body">
-                Rocky<br>Georgia<br>Lehigh
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" role="tab" id="headingTwo">
-              <h5 class="mb-0">
-                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Size
-                </a>
-              </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body">
-                Footwear<br>1, 2, 3, 4, 5, 6<br>Apparel<br>Small, Medium, Large
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" role="tab" id="headingThree">
-              <h5 class="mb-0">
-                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Outsole
-                </a>
-              </h5>
-            </div>
-            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div id="exampleAccordion" data-children=".item">
           <div class="item">
-            <a class="filter-title" data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1">
+            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1">
               Page quantity
             </a>
             <div id="exampleAccordion1" class="collapse show" role="tabpanel">
                 <div class="quantity btn-group" data-toggle="buttons">
-                  <label class="btn btn-secondary active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 50
+                  <label class="btn bg-dark text-light active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 24
                   </label>
-                  <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> 75
+                  <label class="btn bg-dark text-light">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> 48
                   </label>
-                  <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> 100
+                  <label class="btn bg-dark text-light">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> 96
                   </label>
                 </div>
             </div>
           </div>
           <div class="item">
-            <a class="filter-title" data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" aria-expanded="false" aria-controls="exampleAccordion2">
+            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion2" aria-expanded="false" aria-controls="exampleAccordion2">
               Sort by
             </a>
             <div id="exampleAccordion2" class="collapse show" role="tabpanel">
               <div class="list-group">
-                <a href="#" class="list-group-item text-light bg-secondary">Best Selling</a>
-                <a href="#" class="list-group-item list-group-item-action">Brand A-Z</a>
-                <a href="#" class="list-group-item list-group-item-action">Brand Z-A</a>
+                <a href="#" class="list-group-item text-light bg-dark text-light">Best Selling</a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Brand A-Z</a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Brand Z-A</a>
               </div>
             </div>
           </div>
           <div class="item">
-            <a class="filter-title" data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion3" aria-expanded="false" aria-controls="exampleAccordion3">
+            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion3" aria-expanded="false" aria-controls="exampleAccordion3">
               Color
             </a>
             <div id="exampleAccordion3" class="collapse show" role="tabpanel">
@@ -206,42 +162,91 @@ layout: shop
             </div>
           </div>
           <div class="item">
-            <a class="filter-title" data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion4" aria-expanded="false" aria-controls="exampleAccordion4">
+            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion4" aria-expanded="false" aria-controls="exampleAccordion4">
               Price
             </a>
-            <div id="exampleAccordion4" class="collapse show" role="tabpanel">
-              <input id="ex2" type="text" value="" data-slider-min="0" data-slider-max="400" data-slider-step="50" data-slider-value="[0,400]" data-slider-handle="square"/>
+            <div id="exampleAccordion4" class="collapse show" role="tabpanel" style="text-align: center;">
+              <input id="ex2" type="text" value="" data-slider-min="0" data-slider-max="400" data-slider-step="50" data-slider-value="[0,400]" data-slider-handle="square" style="width: 88%;"/>
             </div>
           </div>
           <div class="item">
-            <a class="filter-title" data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion5" aria-expanded="false" aria-controls="exampleAccordion5">
+            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion5" aria-expanded="false" aria-controls="exampleAccordion5">
               Brand
             </a>
             <div id="exampleAccordion5" class="collapse show" role="tabpanel">
-              Rocky<br>Georgia<br>Lehigh
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="">
+                  Rocky Boots
+                </label>
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="">
+                  Georgia Boot
+                </label>
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="">
+                  Timberland PRO
+                </label>
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="">
+                  Steel Blue
+                </label>
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Rocky Boots
+                  </label>
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Georgia Boot
+                  </label>
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Timberland PRO
+                  </label>
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Steel Blue
+                  </label>
+              </div>
             </div>
           </div>
           <div class="item">
-            <a class="filter-title" data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion6" aria-expanded="false" aria-controls="exampleAccordion6">
+            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion6" aria-expanded="false" aria-controls="exampleAccordion6">
               Size
             </a>
             <div id="exampleAccordion6" class="collapse show" role="tabpanel">
-              Footwear<br>1, 2, 3, 4, 5, 6<br>Apparel<br>Small, Medium, Large
+              <h4>Footwear</h4>
+              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">6</button>
+              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">7</button>
+              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">8</button>
+              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">9.5</button>
+              <button type="button" class="btn btn-sm btn-outline-dark active" style="margin: 0.25em 0;">10.5</button>
+              <button type="button" class="btn btn-sm btn-outline-dark active" style="margin: 0.25em 0;">11</button>
+              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">12.5</button>
+              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">13.5</button>
+              <h4>Apparel</h4>
+              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">LR</button>
+              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">XL</button>
+              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">XXL</button>
             </div>
           </div>
           <div class="item">
-            <a class="filter-title" data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion7" aria-expanded="false" aria-controls="exampleAccordion7">
+            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion7" aria-expanded="false" aria-controls="exampleAccordion7">
               Rating
             </a>
-            <div id="exampleAccordion7" class="collapse show" role="tabpanel">
-              Good better best
+            <div id="exampleAccordion7" class="collapse show" role="tabpanel" style="text-align: center;">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
             </div>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-10">
         <div class="row">
-          <div class="col-sm-3" style="margin: 0; padding: 0 0;">
+          <div class="col-sm-3 product-tile">
             <div class="card">
               <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
               <div class="text-center">LEHI010</div>
@@ -257,19 +262,19 @@ layout: shop
                       <div class="price-new">$79.99</div>
                     </div>
                     <div class="input-group">
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn color-primary btn-block btn-sm" style="border: 1px solid #212121; width: 10em;">Buy Now</button>
-                        <button type="button" class="btn btn-secondary btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button>
-                      </div>
-                      <input type="text" class="form-control" style="display: none;" aria-label="">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
                     </div>
-                    <!-- <a href="#" class="btn btn-secondary text-center">Shop LEHI010</a> -->
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
                   </div>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-sm-3" style="margin: 0; padding: 0 0;">
+          <div class="col-sm-3 product-tile">
             <div class="card">
               <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
               <div class="text-center">LEHI010</div>
@@ -285,19 +290,19 @@ layout: shop
                       <div class="price-new">$79.99</div>
                     </div>
                     <div class="input-group">
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn color-primary btn-block btn-sm" style="border: 1px solid #212121; width: 10em;">Buy Now</button>
-                        <button type="button" class="btn btn-secondary btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button>
-                      </div>
-                      <input type="text" class="form-control" style="display: none;" aria-label="">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
                     </div>
-                    <!-- <a href="#" class="btn btn-secondary text-center">Shop LEHI010</a> -->
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
                   </div>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-sm-3" style="margin: 0; padding: 0 0;">
+          <div class="col-sm-3 product-tile">
             <div class="card">
               <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
               <div class="text-center">LEHI010</div>
@@ -313,19 +318,19 @@ layout: shop
                       <div class="price-new">$79.99</div>
                     </div>
                     <div class="input-group">
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn color-primary btn-block btn-sm" style="border: 1px solid #212121; width: 10em;">Buy Now</button>
-                        <button type="button" class="btn btn-secondary btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button>
-                      </div>
-                      <input type="text" class="form-control" style="display: none;" aria-label="">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
                     </div>
-                    <!-- <a href="#" class="btn btn-secondary text-center">Shop LEHI010</a> -->
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
                   </div>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-sm-3" style="margin: 0; padding: 0 0;">
+          <div class="col-sm-3 product-tile">
             <div class="card">
               <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
               <div class="text-center">LEHI010</div>
@@ -341,13 +346,13 @@ layout: shop
                       <div class="price-new">$79.99</div>
                     </div>
                     <div class="input-group">
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn color-primary btn-block btn-sm" style="border: 1px solid #212121; width: 10em;">Buy Now</button>
-                        <button type="button" class="btn btn-secondary btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button>
-                      </div>
-                      <input type="text" class="form-control" style="display: none;" aria-label="">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
                     </div>
-                    <!-- <a href="#" class="btn btn-secondary text-center">Shop LEHI010</a> -->
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
                   </div>
                 </p>
               </div>
@@ -355,7 +360,7 @@ layout: shop
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-3" style="margin: 0; padding: 0 0;">
+          <div class="col-sm-3 product-tile">
             <div class="card">
               <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
               <div class="text-center">LEHI010</div>
@@ -371,19 +376,19 @@ layout: shop
                       <div class="price-new">$79.99</div>
                     </div>
                     <div class="input-group">
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn color-primary btn-block btn-sm" style="border: 1px solid #212121; width: 10em;">Buy Now</button>
-                        <button type="button" class="btn btn-secondary btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button>
-                      </div>
-                      <input type="text" class="form-control" style="display: none;" aria-label="">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
                     </div>
-                    <!-- <a href="#" class="btn btn-secondary text-center">Shop LEHI010</a> -->
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
                   </div>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-sm-3" style="margin: 0; padding: 0 0;">
+          <div class="col-sm-3 product-tile">
             <div class="card">
               <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
               <div class="text-center">LEHI010</div>
@@ -399,19 +404,19 @@ layout: shop
                       <div class="price-new">$79.99</div>
                     </div>
                     <div class="input-group">
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn color-primary btn-block btn-sm" style="border: 1px solid #212121; width: 10em;">Buy Now</button>
-                        <button type="button" class="btn btn-secondary btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button>
-                      </div>
-                      <input type="text" class="form-control" style="display: none;" aria-label="">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
                     </div>
-                    <!-- <a href="#" class="btn btn-secondary text-center">Shop LEHI010</a> -->
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
                   </div>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-sm-3" style="margin: 0; padding: 0 0;">
+          <div class="col-sm-3 product-tile">
             <div class="card">
               <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
               <div class="text-center">LEHI010</div>
@@ -427,19 +432,19 @@ layout: shop
                       <div class="price-new">$79.99</div>
                     </div>
                     <div class="input-group">
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn color-primary btn-block btn-sm" style="border: 1px solid #212121; width: 10em;">Buy Now</button>
-                        <button type="button" class="btn btn-secondary btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button>
-                      </div>
-                      <input type="text" class="form-control" style="display: none;" aria-label="">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
                     </div>
-                    <!-- <a href="#" class="btn btn-secondary text-center">Shop LEHI010</a> -->
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
                   </div>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-sm-3" style="margin: 0; padding: 0 0;">
+          <div class="col-sm-3 product-tile">
             <div class="card">
               <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
               <div class="text-center">LEHI010</div>
@@ -455,19 +460,499 @@ layout: shop
                       <div class="price-new">$79.99</div>
                     </div>
                     <div class="input-group">
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn color-primary btn-block btn-sm" style="border: 1px solid #212121; width: 10em;">Buy Now</button>
-                        <button type="button" class="btn btn-secondary btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button>
-                      </div>
-                      <input type="text" class="form-control" style="display: none;" aria-label="">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
                     </div>
-                    <!-- <a href="#" class="btn btn-secondary text-center">Shop LEHI010</a> -->
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
                   </div>
                 </p>
               </div>
             </div>
           </div>
-        </div>
+        </div><!-- product row -->
+        <div class="row">
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div><!-- product row -->
+        <div class="row">
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div><!-- product row -->
+        <div class="row">
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div><!-- product row -->
+        <div class="row">
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 product-tile">
+            <div class="card">
+              <img class="card-img-top" style="padding: 0 0.5em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" src="http://www.lehighoutfitters.com/on/demandware.static/-/Sites-Master-Product-catalog-en/default/dw12c825a5/images/2016/LEHI010_LARGE.jpg" alt="Card image cap">
+              <div class="text-center">LEHI010</div>
+              <div class="card-body">
+                <!-- <h4 class="card-title">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</h4> -->
+                <p class="card-text text-center">
+                  <a href="#" class="text-dark" style="font-weight: normal; border-bottom: 1px solid #212121; text-align: center;">Lehigh Safety Shoes Unisex Composite Toe Waterproof Work Boot</a><br>
+                  <div class="text-center center">
+                    <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                    <div class="text-center prices">
+                      <div class="price-old">$99.99</div>
+                      <div class="price-save">SAVE <span>25%</span></div>
+                      <div class="price-new">$79.99</div>
+                    </div>
+                    <div class="input-group">
+                      <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
+                      <!-- </div> -->
+                      <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
+                    </div>
+                    <!-- <a href="#" class="btn bg-dark text-light text-center">Shop LEHI010</a> -->
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div><!-- product row -->
+      </div> <!-- col -->
+    </div><!-- row -->
+
+    <div class="row mt-4">
+      <div class="col-sm-6 mr-auto">
+        Showing 24 of <strong>2713</strong> Products
       </div>
-    </div>
+      <div class="col-sm-6">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-end">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- col -->
+    </div><!-- row -->
   </div>
