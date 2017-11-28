@@ -82,7 +82,7 @@ layout: shop
     </div> -->
     <div class="row">
       <div class="col-sm-6 mr-auto">
-        Showing 25-48 of <strong>2713</strong> Products
+        Showing <strong>25-48</strong> of <strong>2713</strong> Products
       </div>
       <div class="col-sm-6">
         <nav aria-label="Page navigation example">
@@ -114,132 +114,139 @@ layout: shop
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-12 col-md-2">
-        <div id="exampleAccordion" data-children=".item">
-          <div class="item">
-            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1">
-              Page quantity
-            </a>
-            <div id="exampleAccordion1" class="collapse show" role="tabpanel">
-                <div class="quantity btn-group" data-toggle="buttons">
-                  <label class="btn bg-dark text-light active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 24
-                  </label>
-                  <label class="btn bg-dark text-light">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> 48
-                  </label>
-                  <label class="btn bg-dark text-light">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> 96
-                  </label>
+      <div class="col-sm-12 col-md-2" style="padding-right: 0;">
+        <div data-children=".items">
+          <div class="items">
+            <a href="#exaccordion" class="filter-titles collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="exaccordion">Filters</a>
+            <div id="exaccordion" class="collapse" role="tabpanel">
+              <div id="exampleAccordion" data-children=".item">
+                <div class="item">
+                  <a class="filter-title" data-toggle="collapse" href="#exampleAccordion2" aria-expanded="false" aria-controls="exampleAccordion2">
+                    Sort by
+                  </a>
+                  <div id="exampleAccordion2" class="collapse show" role="tabpanel">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item text-light bg-dark text-light">Best Selling</a>
+                      <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Brand A-Z</a>
+                      <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Brand Z-A</a>
+                    </div>
+                  </div>
                 </div>
-            </div>
-          </div>
-          <div class="item">
-            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion2" aria-expanded="false" aria-controls="exampleAccordion2">
-              Sort by
-            </a>
-            <div id="exampleAccordion2" class="collapse show" role="tabpanel">
-              <div class="list-group">
-                <a href="#" class="list-group-item text-light bg-dark text-light">Best Selling</a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Brand A-Z</a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Brand Z-A</a>
+                <div class="item">
+                  <a class="filter-title" data-toggle="collapse" href="#exampleAccordion3" aria-expanded="false" aria-controls="exampleAccordion3">
+                    Color
+                  </a>
+                  <div id="exampleAccordion3" class="collapse show" role="tabpanel">
+                    <div class="color-grid">
+                      <div class="color black"></div>
+                      <div class="color white"></div>
+                      <div class="color brown"></div>
+                      <div class="color blue"></div>
+                      <div class="color red"></div>
+                      <div class="color other"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <a class="filter-title" data-toggle="collapse" href="#exampleAccordion4" aria-expanded="false" aria-controls="exampleAccordion4">
+                    Price
+                  </a>
+                  <div id="exampleAccordion4" class="collapse show" role="tabpanel" style="text-align: center;">
+                    <input id="ex2" type="text" value="" data-slider-min="0" data-slider-max="400" data-slider-step="50" data-slider-value="[0,400]" data-slider-handle="square" style="width: 88%;"/>
+                  </div>
+                </div>
+                <div class="item">
+                  <a class="filter-title" data-toggle="collapse" href="#exampleAccordion5" aria-expanded="false" aria-controls="exampleAccordion5">
+                    Brand
+                  </a>
+                  <div id="exampleAccordion5" class="collapse show" role="tabpanel">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Rocky Boots
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Georgia Boot
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Timberland PRO
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Steel Blue
+                      </label>
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="">
+                          Rocky Boots
+                        </label>
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="">
+                          Georgia Boot
+                        </label>
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="">
+                          Timberland PRO
+                        </label>
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="">
+                          Steel Blue
+                        </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <a class="filter-title" data-toggle="collapse" href="#exampleAccordion6" aria-expanded="false" aria-controls="exampleAccordion6">
+                    Size
+                  </a>
+                  <div id="exampleAccordion6" class="collapse show" role="tabpanel">
+                    <h4>Footwear</h4>
+                    <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">6</button>
+                    <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">7</button>
+                    <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">8</button>
+                    <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">9.5</button>
+                    <button type="button" class="btn btn-sm btn-outline-dark active" style="margin: 0.25em 0;">10.5</button>
+                    <button type="button" class="btn btn-sm btn-outline-dark active" style="margin: 0.25em 0;">11</button>
+                    <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">12.5</button>
+                    <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">13.5</button>
+                    <h4>Apparel</h4>
+                    <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">LR</button>
+                    <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">XL</button>
+                    <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">XXL</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <a class="filter-title" data-toggle="collapse" href="#exampleAccordion7" aria-expanded="false" aria-controls="exampleAccordion7">
+                    Rating
+                  </a>
+                  <div id="exampleAccordion7" class="collapse show" role="tabpanel" style="text-align: center;">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                  </div>
+                </div>
+                <div class="item">
+                  <a class="filter-title" data-toggle="collapse" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1">
+                    Page quantity
+                  </a>
+                  <div id="exampleAccordion1" class="collapse show" role="tabpanel">
+                      <div class="quantity btn-group" data-toggle="buttons">
+                        <label class="btn bg-dark text-light active">
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked> 24
+                        </label>
+                        <label class="btn bg-dark text-light">
+                          <input type="radio" name="options" id="option2" autocomplete="off"> 48
+                        </label>
+                        <label class="btn bg-dark text-light">
+                          <input type="radio" name="options" id="option3" autocomplete="off"> 96
+                        </label>
+                      </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="item">
-            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion3" aria-expanded="false" aria-controls="exampleAccordion3">
-              Color
-            </a>
-            <div id="exampleAccordion3" class="collapse show" role="tabpanel">
-              <div class="color-grid">
-                <div class="color black"></div>
-                <div class="color white"></div>
-                <div class="color brown"></div>
-                <div class="color blue"></div>
-                <div class="color red"></div>
-                <div class="color other"></div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion4" aria-expanded="false" aria-controls="exampleAccordion4">
-              Price
-            </a>
-            <div id="exampleAccordion4" class="collapse show" role="tabpanel" style="text-align: center;">
-              <input id="ex2" type="text" value="" data-slider-min="0" data-slider-max="400" data-slider-step="50" data-slider-value="[0,400]" data-slider-handle="square" style="width: 88%;"/>
-            </div>
-          </div>
-          <div class="item">
-            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion5" aria-expanded="false" aria-controls="exampleAccordion5">
-              Brand
-            </a>
-            <div id="exampleAccordion5" class="collapse show" role="tabpanel">
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" value="">
-                  Rocky Boots
-                </label>
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" value="">
-                  Georgia Boot
-                </label>
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" value="">
-                  Timberland PRO
-                </label>
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" value="">
-                  Steel Blue
-                </label>
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    Rocky Boots
-                  </label>
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    Georgia Boot
-                  </label>
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    Timberland PRO
-                  </label>
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    Steel Blue
-                  </label>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion6" aria-expanded="false" aria-controls="exampleAccordion6">
-              Size
-            </a>
-            <div id="exampleAccordion6" class="collapse show" role="tabpanel">
-              <h4>Footwear</h4>
-              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">6</button>
-              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">7</button>
-              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">8</button>
-              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">9.5</button>
-              <button type="button" class="btn btn-sm btn-outline-dark active" style="margin: 0.25em 0;">10.5</button>
-              <button type="button" class="btn btn-sm btn-outline-dark active" style="margin: 0.25em 0;">11</button>
-              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">12.5</button>
-              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">13.5</button>
-              <h4>Apparel</h4>
-              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">LR</button>
-              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">XL</button>
-              <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">XXL</button>
-            </div>
-          </div>
-          <div class="item">
-            <a class="filter-title" data-toggle="collapse" href="#exampleAccordion7" aria-expanded="false" aria-controls="exampleAccordion7">
-              Rating
-            </a>
-            <div id="exampleAccordion7" class="collapse show" role="tabpanel" style="text-align: center;">
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
             </div>
           </div>
         </div>
@@ -934,7 +941,7 @@ layout: shop
 
     <div class="row mt-4">
       <div class="col-sm-6 mr-auto">
-        Showing 25-48 of <strong>2713</strong> Products
+        Showing <strong>25-48</strong> of <strong>2713</strong> Products
       </div>
       <div class="col-sm-6">
         <nav aria-label="Page navigation example">
@@ -943,7 +950,7 @@ layout: shop
               <a class="page-link" href="#" tabindex="-1">Previous</a>
             </li>
             <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item"><a class="page-link" href="#">4</a></li>
             <li class="page-item"><a class="page-link" href="#">5</a></li>
