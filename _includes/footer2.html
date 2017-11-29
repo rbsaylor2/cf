@@ -90,6 +90,9 @@
   $('.popover-dismiss').popover({
     trigger: 'focus'
   });
+  $('.btn-buynow').click(function() {
+    console.log('clicked buy now');
+  });
   $('.btn-buy').click(function(){
     $(this).closest('.card').append(`
       <div class="card-cover">

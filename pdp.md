@@ -200,7 +200,7 @@ layout: shop
       <div class="col-sm-6">
         <div class="input-group">
           <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn color-primary btn-lg btn-block" style="border: 1px solid #212121; width: 13em;">Buy Now</button>
+            <button type="button" class="btn color-primary btn-lg btn-block btn-buynow" style="border: 1px solid #212121; width: 13em;">Buy Now</button>
             <button type="button" class="btn color-primary btn-lg" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button>
           </div>
           <input type="text" class="form-control" style="display: none;" aria-label="">
@@ -280,6 +280,9 @@ layout: shop
       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Reviews</div>
       <div class="tab-pane fade" id="dropdown1" role="tabpanel" aria-labelledby="dropdown1-tab">Outsole</div>
     </div>
+  </div>
+  <div class="cart">
+    <h2>Cart<span class="float-right">2 Items | $242</span></h2>
   </div>
 </div>
 </div>

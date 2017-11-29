@@ -18,6 +18,16 @@ p {
 .btn-buy {
   z-index: 500;
 }
+.cart {
+  height: 100%;
+  width: 500px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: white;
+  z-index: 500;
+  padding: 2em;
+}
 .card-cover {
   padding: 0.5em;
   height: 58%;
