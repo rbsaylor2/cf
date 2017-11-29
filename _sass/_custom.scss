@@ -70,6 +70,20 @@ p {
 .container {
   padding: 1em;
 }
+.help {
+  background: rgba(0, 0, 0, 0.75);
+  color: #ebebeb;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8em;
+  &:hover {
+    color: #ebebeb;
+    text-decoration: none;
+  }
+}
 .scrollbar {
   padding: 0.5em;
   &::-webkit-scrollbar {
