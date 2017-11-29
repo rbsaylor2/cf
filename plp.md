@@ -127,6 +127,8 @@ layout: shop
                   <div id="exampleAccordion2" class="collapse show" role="tabpanel">
                     <div class="list-group">
                       <a href="#" class="list-group-item text-light bg-dark text-light">Best Selling</a>
+                      <a href="#" class="list-group-item text-light bg-dark text-light">Price High to Low</a>
+                      <a href="#" class="list-group-item text-light bg-dark text-light">Price Low to High</a>
                       <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Brand A-Z</a>
                       <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Brand Z-A</a>
                     </div>
@@ -270,7 +272,7 @@ layout: shop
                     </div>
                     <div class="input-group">
                       <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
-                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <button type="button" class="btn color-primary btn-sm btn-block btn-buy" style="border: 1px solid #212121;">Buy Now</button>
                         <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
                       <!-- </div> -->
                       <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->

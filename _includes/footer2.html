@@ -90,4 +90,53 @@
   $('.popover-dismiss').popover({
     trigger: 'focus'
   });
+  $('.btn-buy').click(function(){
+    $(this).closest('.card').append(`
+      <div class="card-cover">
+        <h5 style="display: inline;">Width:</h5>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select width
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Medium</a>
+            <a class="dropdown-item" href="#">E</a>
+            <a class="dropdown-item" href="#">2E</a>
+            <a class="dropdown-item" href="#">3E</a>
+            <a class="dropdown-item" href="#">4E</a>
+          </div>
+        </div>
+        <h5 style="display: inline;">Size:</h5>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select size
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">7</a>
+            <a class="dropdown-item" href="#">7.5</a>
+            <a class="dropdown-item" href="#">9</a>
+            <a class="dropdown-item" href="#">10</a>
+            <a class="dropdown-item" href="#">10.5</a>
+            <a class="dropdown-item" href="#">9</a>
+            <a class="dropdown-item" href="#">10</a>
+            <a class="dropdown-item" href="#">10.5</a>
+            <a class="dropdown-item" href="#">9</a>
+            <a class="dropdown-item" href="#">10</a>
+            <a class="dropdown-item" href="#">10.5</a>
+          </div>
+        </div>
+        <h5 style="display: inline;">Employee:</h5>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select employee
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">John</a>
+            <a class="dropdown-item" href="#">Jane</a>
+            <a class="dropdown-item" href="#">Jim</a>
+          </div>
+        </div>
+      </div>
+    `);
+  });
 </script>

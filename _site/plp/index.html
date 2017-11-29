@@ -68,7 +68,7 @@
         <ul class="nav navbar-nav navbar-center" style="">
           <li>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder='Name, feature, SKU, etc.' aria-label="Name, feature, SKU, etc.">
+              <input type="text" class="form-control" placeholder='Brand, feature, SKU, etc.' aria-label="Name, feature, SKU, etc.">
               <span class="input-group-btn">
                 <button class="btn btn-default color-primary" type="button"><i class="material-icons" style="font-size: 1.6em;">search</i></button>
                 <!-- <button class="btn color-primary" type="button">Search</button> -->
@@ -323,6 +323,8 @@
                   <div id="exampleAccordion2" class="collapse show" role="tabpanel">
                     <div class="list-group">
                       <a href="#" class="list-group-item text-light bg-dark text-light">Best Selling</a>
+                      <a href="#" class="list-group-item text-light bg-dark text-light">Price High to Low</a>
+                      <a href="#" class="list-group-item text-light bg-dark text-light">Price Low to High</a>
                       <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Brand A-Z</a>
                       <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Brand Z-A</a>
                     </div>
@@ -466,7 +468,7 @@
                     </div>
                     <div class="input-group">
                       <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
-                        <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
+                        <button type="button" class="btn color-primary btn-sm btn-block btn-buy" style="border: 1px solid #212121;">Buy Now</button>
                         <!-- <button type="button" class="btn bg-dark text-light btn-sm" style="border: 1px solid #212121;"><i class="material-icons" style="position: relative; top: 5px;">add_shopping_cart</i></button> -->
                       <!-- </div> -->
                       <!-- <input type="text" class="form-control" style="display: none;" aria-label=""> -->
@@ -1216,7 +1218,7 @@
     <div class="row">
       <div class="col-lg-6 col-centered">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder='Search product name, feature, SKU, etc.' aria-label="Name, feature, SKU, etc.">
+          <input type="text" class="form-control" placeholder='Search product name, feature, SKU, etc.' aria-label="Brand, feature, SKU, etc.">
           <!-- <input type="text" id="search" class="form-control"> -->
           <span class="input-group-btn">
              <!-- <i class="material-icons">check</i> -->
@@ -1251,6 +1253,55 @@
   });
   $('.popover-dismiss').popover({
     trigger: 'focus'
+  });
+  $('.btn-buy').click(function(){
+    $(this).closest('.card').append(`
+      <div class="card-cover">
+        <h5 style="display: inline;">Width:</h5>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select width
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Medium</a>
+            <a class="dropdown-item" href="#">E</a>
+            <a class="dropdown-item" href="#">2E</a>
+            <a class="dropdown-item" href="#">3E</a>
+            <a class="dropdown-item" href="#">4E</a>
+          </div>
+        </div>
+        <h5 style="display: inline;">Size:</h5>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select size
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">7</a>
+            <a class="dropdown-item" href="#">7.5</a>
+            <a class="dropdown-item" href="#">9</a>
+            <a class="dropdown-item" href="#">10</a>
+            <a class="dropdown-item" href="#">10.5</a>
+            <a class="dropdown-item" href="#">9</a>
+            <a class="dropdown-item" href="#">10</a>
+            <a class="dropdown-item" href="#">10.5</a>
+            <a class="dropdown-item" href="#">9</a>
+            <a class="dropdown-item" href="#">10</a>
+            <a class="dropdown-item" href="#">10.5</a>
+          </div>
+        </div>
+        <h5 style="display: inline;">Employee:</h5>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select employee
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">John</a>
+            <a class="dropdown-item" href="#">Jane</a>
+            <a class="dropdown-item" href="#">Jim</a>
+          </div>
+        </div>
+      </div>
+    `);
   });
 </script>
 

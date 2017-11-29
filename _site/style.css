@@ -2625,6 +2625,7 @@ tbody.collapse.show {
   color: white; }
 
 .card {
+  overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -6260,6 +6261,24 @@ p a, p a:hover, p a:active, p a:focus {
   font-weight: bold;
   font-size: 1.4em; }
 
+.btn-buy {
+  z-index: 500; }
+
+.card-cover {
+  padding: 0.5em;
+  height: 58%;
+  width: 100%;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  animation: buybtn 0.5s forwards; }
+
+@keyframes buybtn {
+  0% {
+    left: -100%; }
+  100% {
+    left: 0; } }
 .color-grid {
   display: flex;
   justify-content: center;

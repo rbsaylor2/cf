@@ -89,7 +89,7 @@ layout: shop
           </label>
         </div> -->
       </div>
-      <div>
+      <div class="col-sm-3">
         <h4>Color:</h4>
         <button type="button" class="btn btn-outline-dark active" style="margin: 4px 0; padding: 0.5em;">Black</button>
         <!-- <button type="button" class="btn btn-outline-dark" style="margin: 4px 0; padding: 0.5em;">Grey</button>
@@ -109,6 +109,19 @@ layout: shop
             <input type="radio" name="options" id="option2" autocomplete="off"> Wide
           </label>
         </div> -->
+      </div>
+      <div class="col-sm-3">
+        <h4>Employee:</h4>
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle mt-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select employee
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">John</a>
+            <a class="dropdown-item" href="#">Jane</a>
+            <a class="dropdown-item" href="#">Joe</a>
+          </div>
+        </div>
       </div>
       <div class="col-sm-12">
         <h4>Size: <a href="#" data-toggle="tooltip" data-placement="top" title="Sizes are listed in men's. To select a women's size, add 2. Example: Men's 4 is equal to a women's 6" class="help">?</a></h4>
