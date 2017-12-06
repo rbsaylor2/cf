@@ -90,8 +90,8 @@ layout: gcc
     <li><img src="https://i.imgur.com/cr5TuHn.jpg" alt=""></li>
     <li class="active">Manage Employees</li>
     <li>Vouchers</li>
-    <li>Order History</li>
-    <li>Return History</li>
+    <li>Order</li>
+    <li>Return</li>
     <li>Email Subsidy Reminders</li>
   </ul>
 </nav>
@@ -198,7 +198,7 @@ layout: gcc
       </div>
     </div>
   </div>
-  <div class="row mt-3">
+  <!-- <div class="row mt-3">
     <div class="col-sm-12">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
@@ -247,11 +247,10 @@ layout: gcc
         </div>
       </div>
     </div>
-  </div>
-  <div class="row my-3">
+  </div> -->
+  <!-- <div class="row my-3">
     <div class="list-group col-sm-12 col-md-4">
       <h2 class="text-secondary">Program Management</h2>
-      <!-- <a href="#" class="list-group-item list-group-item-action">Manage Global Program</a> -->
       <a href="#" class="list-group-item list-group-item-action">Jump Station</a>
       <a href="#" class="list-group-item list-group-item-action">Return History</a>
       <a href="#" class="list-group-item list-group-item-action">Order History</a>
@@ -271,7 +270,7 @@ layout: gcc
       <a href="#" class="list-group-item list-group-item-action">Order Instructions</a>
       <a href="#" class="list-group-item list-group-item-action">Order Form</a>
     </div>
-  </div>
+  </div> -->
   <div class="row mb-2">
     <div class="col-sm-12">
       <button type="button" class="btn color-primary btn-lg btn-block">Shop All Protective Footwear</button>
