@@ -276,8 +276,8 @@ layout: shop
       <div class="tab-pane fade" id="outsole" role="tabpanel" aria-labelledby="outsole-tab">Outsole</div>
     </div>
   </div>
-  <!-- <div class="cart">
+  <div class="cart">
     <h2>Cart<span class="float-right">2 Items | $242</span></h2>
-  </div> -->
+  </div>
 </div>
 </div>
