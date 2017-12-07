@@ -81,10 +81,28 @@ layout: shop
       </div>
     </div> -->
     <div class="row">
-      <div class="col-sm-6 mr-auto">
+      <div class="col-sm-12">
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+          <strong>Need boots FAST?</strong> Check out the <a href="#" style="text-decoration: underline;">QuickFit</a> collection for FREE overnight shipping.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 mr-auto">
         Showing <strong>25-48</strong> of <strong>2713</strong> Products
       </div>
       <div class="col-sm-6">
+        <div style="display: inline; font-size: 1.4em;">Sort by:</div>
+        <a href="#" style="text-decoration: underline; font-size: 1.4em;">Best Selling</a> <span style="color: #ccc;">|</span>
+        <a href="#" style="text-decoration: underline; font-size: 1.4em; margin: 0 0.25em;">↑ A</a> <span style="color: #ccc;">|</span>
+        <a href="#" style="text-decoration: underline; font-size: 1.4em; margin: 0 0.25em;">↑ Z</a> <span style="color: #ccc;">|</span>
+        <a href="#" style="text-decoration: underline; font-size: 1.4em; margin: 0 0.25em;">↑ $</a> <span style="color: #ccc;">|</span>
+        <a href="#" style="text-decoration: underline; font-size: 1.4em; margin: 0 0.25em;">↓ $</a>
+      </div>
+      <div class="col-sm-3">
         <nav aria-label="Page navigation example">
           <ul class="pagination justify-content-end">
             <li class="page-item disabled">
@@ -104,16 +122,6 @@ layout: shop
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
-        <div class="alert alert-primary alert-dismissible fade show" role="alert">
-          <strong>Need boots FAST?</strong> Check out the <a href="#" style="text-decoration: underline;">QuickFit</a> collection for FREE overnight shipping.
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="row">
       <div class="col-sm-12 col-md-2" style="padding-right: 0;">
         <div data-children=".items">
           <div class="items">
@@ -121,6 +129,24 @@ layout: shop
             <div id="exaccordion" class="collapse" role="tabpanel">
               <div id="exampleAccordion" data-children=".item">
                 <div class="item">
+                  <a class="filter-title" data-toggle="collapse" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1">
+                    Page quantity
+                  </a>
+                  <div id="exampleAccordion1" class="collapse show" role="tabpanel">
+                      <div class="quantity btn-group" data-toggle="buttons">
+                        <label class="btn bg-dark text-light active">
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked> 24
+                        </label>
+                        <label class="btn bg-dark text-light">
+                          <input type="radio" name="options" id="option2" autocomplete="off"> 48
+                        </label>
+                        <label class="btn bg-dark text-light">
+                          <input type="radio" name="options" id="option3" autocomplete="off"> 96
+                        </label>
+                      </div>
+                  </div>
+                </div>
+                <!-- <div class="item">
                   <a class="filter-title" data-toggle="collapse" href="#exampleAccordion2" aria-expanded="false" aria-controls="exampleAccordion2">
                     Sort by
                   </a>
@@ -133,7 +159,7 @@ layout: shop
                       <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Brand Z-A</a>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <div class="item">
                   <a class="filter-title" data-toggle="collapse" href="#exampleAccordion3" aria-expanded="false" aria-controls="exampleAccordion3">
                     Color
@@ -162,7 +188,7 @@ layout: shop
                     Brand
                   </a>
                   <div id="exampleAccordion5" class="collapse show" role="tabpanel">
-                    <div class="form-check">
+                    <div class="form-check" style="overflow-y: scroll; height: 250px;">
                       <label class="form-check-label">
                         <input class="form-check-input" type="checkbox" value="">
                         Rocky Boots
@@ -179,22 +205,22 @@ layout: shop
                         <input class="form-check-input" type="checkbox" value="">
                         Steel Blue
                       </label>
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" value="">
-                          Rocky Boots
-                        </label>
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" value="">
-                          Georgia Boot
-                        </label>
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" value="">
-                          Timberland PRO
-                        </label>
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" value="">
-                          Steel Blue
-                        </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Rocky Boots
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Georgia Boot
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Timberland PRO
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Steel Blue
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -228,24 +254,6 @@ layout: shop
                     <i class="material-icons">star</i>
                     <i class="material-icons">star</i>
                     <i class="material-icons">star</i>
-                  </div>
-                </div>
-                <div class="item">
-                  <a class="filter-title" data-toggle="collapse" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1">
-                    Page quantity
-                  </a>
-                  <div id="exampleAccordion1" class="collapse show" role="tabpanel">
-                      <div class="quantity btn-group" data-toggle="buttons">
-                        <label class="btn bg-dark text-light active">
-                          <input type="radio" name="options" id="option1" autocomplete="off" checked> 24
-                        </label>
-                        <label class="btn bg-dark text-light">
-                          <input type="radio" name="options" id="option2" autocomplete="off"> 48
-                        </label>
-                        <label class="btn bg-dark text-light">
-                          <input type="radio" name="options" id="option3" autocomplete="off"> 96
-                        </label>
-                      </div>
                   </div>
                 </div>
               </div>

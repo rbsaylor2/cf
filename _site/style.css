@@ -2372,6 +2372,9 @@ tbody.collapse.show {
 .tab-content > .active {
   display: block; }
 
+.navbar-expand-lg .navbar-nav a.nav-link {
+  padding-right: 1rem; }
+
 .navbar {
   position: relative;
   display: flex;
