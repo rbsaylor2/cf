@@ -306,6 +306,17 @@ layout: shop
                       <div class="price-save">SAVE <span>25%</span></div>
                       <div class="price-new">$79.99</div>
                     </div>
+                    <div style="
+                    font-style: italic;
+                    color: #b70000;
+                    margin-bottom: 0;
+                    padding: 0;
+                  ">ADDITIONAL SAVINGS</div>
+                  <div style="
+                  font-size: 1.75em;
+                  font-weight: bold;
+                  color: #c30000;
+                ">ONLY $54.95</div>
                     <div class="input-group">
                       <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
                         <button type="button" class="btn color-primary btn-sm btn-block" style="border: 1px solid #212121;">Buy Now</button>
