@@ -176,11 +176,32 @@ layout: shop
                   </div>
                 </div>
                 <div class="item">
+                  <a class="filter-title" data-toggle="collapse" href="#exampleAccordion5" aria-expanded="false" aria-controls="exampleAccordion5">
+                    Gender
+                  </a>
+                  <div id="exampleAccordion5" class="collapse show" role="tabpanel">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Men's (245)
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Women's (128)
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Unisex (96)
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
                   <a class="filter-title" data-toggle="collapse" href="#exampleAccordion4" aria-expanded="false" aria-controls="exampleAccordion4">
                     Price
                   </a>
                   <div id="exampleAccordion4" class="collapse show" role="tabpanel" style="text-align: center;">
-                    <input id="ex2" type="text" value="" data-slider-min="0" data-slider-max="400" data-slider-step="50" data-slider-value="[0,400]" data-slider-handle="square" style="width: 88%;"/>
+                    <input id="ex2" type="text" value="" data-slider-min="0" data-slider-max="250" data-slider-step="25" data-slider-value="[0,250]" data-slider-handle="square" style="width: 88%;"/>
                   </div>
                 </div>
                 <div class="item">
@@ -242,6 +263,9 @@ layout: shop
                     <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">LR</button>
                     <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">XL</button>
                     <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">XXL</button>
+                    <h4>Shoe Width</h4>
+                    <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">Wide</button>
+                    <button type="button" class="btn btn-sm btn-outline-dark" style="margin: 0.25em 0;">Extra Wide</button>
                   </div>
                 </div>
                 <div class="item">
@@ -254,6 +278,35 @@ layout: shop
                     <i class="material-icons">star</i>
                     <i class="material-icons">star</i>
                     <i class="material-icons">star</i>
+                  </div>
+                </div>
+                <div class="item">
+                  <a class="filter-title" data-toggle="collapse" href="#exampleAccordion5" aria-expanded="false" aria-controls="exampleAccordion5">
+                    Shoe Style
+                  </a>
+                  <div id="exampleAccordion5" class="collapse show" role="tabpanel">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        6-inch boot
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        8-inch and higher boot
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Athletic
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Clog
+                      </label>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Hi-Top
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
