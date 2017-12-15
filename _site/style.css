@@ -6685,23 +6685,25 @@ nav.bg-dark {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    color: white; }
     .info .caption h3 {
       margin: 0;
       font-weight: bold; }
     .info .caption .title {
-      color: #999;
+      color: #fff;
       font-size: 0.8em; }
     .info .caption .subtitle {
-      color: #999;
+      color: #fff;
       font-size: 0.8em; }
     .info .caption .email, .info .caption .phone {
-      color: #999;
+      color: #fff;
       font-size: 0.8em; }
     .info .caption .linkedin, .info .caption .linkedin:hover, .info .caption .linkedin:active, .info .caption .linkedin:focus {
-      color: #999;
+      color: #fff;
       font-size: 0.8em;
-      border-bottom: 1px solid #999;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
       text-decoration: none; }
 
 .contact {
