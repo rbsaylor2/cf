@@ -41,3 +41,24 @@ custom_js:
     {% endfor %}
   </ul>
 </div>
+
+
+
+{% for collection in site.collections %}
+
+  {% assign name = collection.label %}
+
+  <section>
+    <h1>{{ name }}</h1>
+
+    {% for page in site.[name] %}
+    <article>
+      <h2>{{ page.title }}</h2>
+      [Some Link]({{ site.url }}{{ site.baseurl }}{% post_url 2017-11-01-blue-diamond-growers-safety-award %})
+      <p>{{ page.content | markdownify }}</p>
+    </article>
+    {% endfor %}
+
+  </section>
+
+{% endfor %}

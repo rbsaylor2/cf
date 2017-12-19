@@ -1,0 +1,9 @@
+---
+title: June is National Safety Month
+image: https://d1jdomzv2hp689.cloudfront.net/content/data/18_795.png
+---
+June is National Safety Month. Observed annually, the National Safety Council (NSC) uses the month to focus on, promote and communicate ways of reducing the leading causes of injury and death in the workplace, at home and in the community. This year's theme, "What I Have To Live For" encourages individuals to think about safety prevention as a way to celebrate and realize their passions. Materials, webinars and other tools are available for supervisors and managers to promote and instill better daily awareness, habits and procedures.
+
+As an industry leader in safety footwear, Lehigh CustomFit is a proud supporter of all ways that help you stay safe on the job and everywhere you go and live. Like NSC, our overall mission is safety. As we strive to continually provide you with up-to-date and relevant resources and articles, we encourage you to keep checking back with us here at customfit.me. If you are not receiving our awesome informational and promotional emails, sign up today.
+
+OSHA qualifies footwear protection as an essential PPE (personal performance equipment) and we value our responsibility in providing you and your employees with a quality pair of boots that you trust to keep you safe. In doing that, we also believe you appreciate the hows and whys of safety so we also strive to provide information to help you better understand the best ways you can be safe and instill safety. After all, as we say on our About Us page, "Providing quality safety footwear with exceptional service and value is what we do," and we hope that you put your trust in us to do that for YOU. Contact us today to improve your safety footwear program, and thus; the safety of you and your workers.
