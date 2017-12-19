@@ -6397,6 +6397,14 @@ nav.bg-dark {
   text-align: center;
   margin: 0 auto; }
 
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .grid li {
+    display: inline-block;
+    width: 33%; }
+
 .prices {
   font-size: 1.4em;
   font-family: 'Arial', sans-serif;

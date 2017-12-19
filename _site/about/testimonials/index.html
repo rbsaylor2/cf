@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CustomFit - Managed Safety Shoe Programs</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Material+Icons|Quicksand:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="http://localhost:4000/cf/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- <div class="container-fluid"> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="http://localhost:4000/cf/"><img src="https://i.imgur.com/5qqMgem.png" alt="CustomFit"></a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item active"><a href="http://localhost:4000/cf/" class="nav-link">Home <span class="sr-only">(current)</span></a></li> -->
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="dropdown01">About</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="http://localhost:4000/cf/about/overview">Overview</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/about/who-we-are">Who We Are</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/about/sales-team">Our Sales Team</a>
+              <!-- <a class="dropdown-item" href="http://localhost:4000/cf/about/accounts-receivable">Our AR Team</a> -->
+              <a class="dropdown-item" href="http://localhost:4000/cf/about/brands2">Brands We Sell</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/about/industries">Industries We Serve</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/about/testimonials">Customer Testimonials</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/about/news">News &amp; Events</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/about/usa">Made in the USA</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/about/features">Product Features</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/about/register">Register Your Product</a>
+            </div>
+          </li>
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false" id="dropdown02">Services</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown02">
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/kiosks">Kiosks</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/safety-shoe-truck">Safety Shoe Truck</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/data-exchange">Data Exchange</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/vouchers">Vouchers</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/command-center">Command Center</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/ordering-options">Ordering Options</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/eipp">EIPP Login</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/warranty">Warranty</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/360-guarantee">360 Guarantee</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/returns">Returns</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/savings">Savings</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/savings-calculator">Savings Calculator</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/glossary">Glossary</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/catalogs">Catalogs</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/boot-size-guide">Boot Size Guide</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/services/faq">FAQ</a>
+            </div>
+          </li>
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false" id="dropdown03">Resources</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown03">
+              <a class="dropdown-item" href="http://localhost:4000/cf/resources/articles">Articles</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/resources/white-papers">White Papers</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/resources/posters">Posters</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/resources/webinars">Webinars</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/resources/videos">Videos</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/resources/how-to-use-customfit">How to use your custom site</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/resources/blog">Blog</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/resources/ask-the-expert">Ask The Expert</a>
+              <a class="dropdown-item" href="http://localhost:4000/cf/contact">Contact</a>
+            </div>
+          </li>
+          <!-- <li><a href="#">Contact</a></li> -->
+        </ul>
+        <!-- <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form> -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" href="#" data-toggle="popover" data-placement="bottom" data-trigger="click" title="Login" data-content="<form>
+              <div class='form-group'>
+                <label for='exampleInputEmail1'>Account</label>
+                <input type='email' class='form-control' id='exampleInputEmail1' aria-describedby='emailHelp' placeholder='Example: 028533'>
+                <!-- <small id='emailHelp' class='form-text text-muted'>We'll never share your email with anyone else.</small> -->
+              </div>
+              <div class='form-group'>
+                <label for='exampleInputEmail1'>Location</label>
+                <input type='email' class='form-control' id='exampleInputEmail1' aria-describedby='emailHelp' placeholder='Example: 00001'>
+                <!-- <small id='emailHelp' class='form-text text-muted'>We'll never share your email with anyone else.</small> -->
+              </div>
+              <div class='form-group'>
+                <label for='exampleInputPassword1'>Password</label>
+                <input type='password' class='form-control' id='exampleInputPassword1' placeholder='Password'>
+              </div>
+              <!-- <div class='form-check'>
+                <label class='form-check-label'>
+                  <input type='checkbox' class='form-check-input'>
+                  Check me out
+                </label>
+              </div> -->
+              <button type='submit' class='btn btn-block color-primary'>Login</button>
+            </form>" data-html="true">Login / Command Center</a></li>
+        </ul>
+      </div>
+    <!-- </div> -->
+</nav>
+
+  <style>
+.truncate3 {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 6em;
+  text-align: justify;
+  margin-right: 0em;
+  padding-right: 1em;
+  font-size: 0.8em;
+}
+.truncate3:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.truncate3:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+</style>
+<div class="container lead">
+  <div class="page-header">
+    <h1>Customer Testimonials <small>The Great Companies We Serve Have Something To Say...</small></h1>
+  </div>
+  <div class="text-center">
+    <h2 class="text-secondary">Featured Cusomer Testimonial</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_lAmb_YQ4Vo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+  <h2 class="mt-2">Lehigh CustomFit Customer Testimonials</h2>
+  <ul class="grid">
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Jeff Stoolman, Director of Safety</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://d1jdomzv2hp689.cloudfront.net/document/data/118_887doc.png" alt="Summit Midstream Partners" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">Summit Midstream Partners</h4>
+          <p class="card-text truncate3">The program is amazing and has been very successful with our employees. We have no complaints and all praises. Thanks for all your service and dedication to Summit Midstream!</p>
+          <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1label">Summit Midstream Partners</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The program is amazing and has been very successful with our employees. We have no complaints and all praises. Thanks for all your service and dedication to Summit Midstream!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Jennifer Wilson, HR Manager</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="http://info.rockybrands.com/rs/018-APH-439/images/170815-testimonial.png" alt="Renaissance Hotel Pittsburgh" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">Renaissance Hotel Pittsburgh</h4>
+          <p class="card-text truncate3">I wanted to say 'Thank You' again for such a great roll out yesterday. Everyone is excited about the new program, the great prices, how easy it is, etc, etc, etc.</p>
+          <a href="#" data-toggle="modal" data-target="#modal2" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2label">Renaissance Hotel Pittsburgh</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              I wanted to say 'Thank You' again for such a great roll out yesterday. Everyone is excited about the new program, the great prices, how easy it is, etc, etc, etc.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Jason Toon, Mesquite, TX location</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://d1jdomzv2hp689.cloudfront.net/document/data/118_888doc.gif" alt="PEPSICO" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">PEPSICO</h4>
+          <p class="card-text truncate3">The kiosk has been extremely user-friendly. The support personnel from Lehigh have been very helpful and are very accessible. There have been some bumps on the road (we put safety shoes on 300+ people) but Lehigh has been responsive to all issues that we have faced.</p>
+          <a href="#" data-toggle="modal" data-target="#modal3" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3label">PEPSICO</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The kiosk has been extremely user-friendly. The support personnel from Lehigh have been very helpful and are very accessible. There have been some bumps on the road (we put safety shoes on 300+ people) but Lehigh has been responsive to all issues that we have faced.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Rebecca Bogunovich, Utility Pipeline – Canton Ohio</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="http://manage.customfit.me/document/data/403_1338doc.png" alt="Utility Pipeline" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">Utility Pipeline</h4>
+          <p class="card-text truncate3">Thank you! You are always so quick to respond with answers and information. Our experience with your company has been great so far. The website is easy to use and any of the employees that have had to call you directly said you were very nice and helpful. They like how quick and simple it is to return boots that do not fit correctly, in exchange for a different boot.</p>
+          <a href="#" data-toggle="modal" data-target="#modal4" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal4label">Utility Pipeline</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Thank you! You are always so quick to respond with answers and information. Our experience with your company has been great so far. The website is easy to use and any of the employees that have had to call you directly said you were very nice and helpful. They like how quick and simple it is to return boots that do not fit correctly, in exchange for a different boot.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Ken Forbes, Laboratory Manager</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://d1jdomzv2hp689.cloudfront.net/document/data/118_889doc.png" alt="Nexeo Solutions" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">Nexeo Solutions</h4>
+          <p class="card-text truncate3">I am writing to let you know that Lehigh Outfitters has supplied our company with high quality safety shoes and boots for more than a decade. From your boot mobile on-site fitting service to your online catalog ordering, we have enjoyed high quality footwear with fast delivery and hassle-free service to our chemical distribution plant her in Fairfield, CA. Thank you for following up with us and we’ll continue to look to Lehigh for our steel-toe protection.</p>
+          <a href="#" data-toggle="modal" data-target="#modal5" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal5label">Nexeo Solutions</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              I am writing to let you know that Lehigh Outfitters has supplied our company with high quality safety shoes and boots for more than a decade. From your boot mobile on-site fitting service to your online catalog ordering, we have enjoyed high quality footwear with fast delivery and hassle-free service to our chemical distribution plant her in Fairfield, CA. Thank you for following up with us and we’ll continue to look to Lehigh for our steel-toe protection.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Anthony Stedry</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://d1jdomzv2hp689.cloudfront.net/document/data/118_890doc.jpg" alt="Industrial Distribution Group" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">Industrial Distribution Group</h4>
+          <p class="card-text truncate3">We here at IDG-Corning Gilbert would like to take a moment to tell you thank you for setting up our CustomFit website. Using the CustomFit website for our industrial shoe needs has been a big time saver for us and our employees. Having the custom-made posters posted for our employees to look at and see all of the options available to them makes the ordering process much easier. We are very happy with how easy it is to navigate the site and get any information that we need in the ordering process. One of the things that has been very useful for IDG is the quick order confirmations that you get when you place the order. Also in the event there is a need for a return the process that is set up through our CustomFit website makes it a no hassle transaction.
+The process for ordering shoes here previously was to give the employee a voucher and they had to go and pick them up. With the CustomFit Website we have cut down on the time needed to order by 10 minutes and the employee no longer has to go and get the shoes.
+For anyone that has to order a lot of shoes and would like to make it easy we would like to recommend that you show them your CustomFit Website.</p>
+          <a href="#" data-toggle="modal" data-target="#modal6" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal6label">Industrial Distribution Group</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              We here at IDG-Corning Gilbert would like to take a moment to tell you thank you for setting up our CustomFit website. Using the CustomFit website for our industrial shoe needs has been a big time saver for us and our employees. Having the custom-made posters posted for our employees to look at and see all of the options available to them makes the ordering process much easier. We are very happy with how easy it is to navigate the site and get any information that we need in the ordering process. One of the things that has been very useful for IDG is the quick order confirmations that you get when you place the order. Also in the event there is a need for a return the process that is set up through our CustomFit website makes it a no hassle transaction.
+The process for ordering shoes here previously was to give the employee a voucher and they had to go and pick them up. With the CustomFit Website we have cut down on the time needed to order by 10 minutes and the employee no longer has to go and get the shoes.
+For anyone that has to order a lot of shoes and would like to make it easy we would like to recommend that you show them your CustomFit Website.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Jaysen Lockett, Safety/QA Manager</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://d1jdomzv2hp689.cloudfront.net/document/data/118_892doc.jpg" alt="TRAX Test Services / US Army Yuma Proving Grounds" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">TRAX Test Services / US Army Yuma Proving Grounds</h4>
+          <p class="card-text truncate3">The CustomFit web page offered by Lehigh Outfitters has proved to be a valuable tool for equipping our employees with Metatarsal boots. The District Sales Manager offered the program during a Safety Awareness Week expo and quickly set up a model for us to evaluate. After the evaluation and approval to set up the custom website to our needs, we quickly had the ability to purchase metatarsal boots! The ease of ordering, low cost and free shipping exceeded all of our expectations. We have over 1000 employees that are in need of boots at any given time and this program works out great for us. Their CustomFit website program is just that (CustomFit). In some cases, we had the need to ship boots back (because of size issues) and Lehigh quickly set up a return process on our CustomFit website to expedite the return and re-shipment, the shipping and returns are free too. I am pleased to say that not only has Lehigh helped us to meet our goals to get our employees metatarsal boots, but they have taken the customer service to the next level. Thank you!</p>
+          <a href="#" data-toggle="modal" data-target="#modal7" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modal7label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal7label">TRAX Test Services / US Army Yuma Proving Grounds</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The CustomFit web page offered by Lehigh Outfitters has proved to be a valuable tool for equipping our employees with Metatarsal boots. The District Sales Manager offered the program during a Safety Awareness Week expo and quickly set up a model for us to evaluate. After the evaluation and approval to set up the custom website to our needs, we quickly had the ability to purchase metatarsal boots! The ease of ordering, low cost and free shipping exceeded all of our expectations. We have over 1000 employees that are in need of boots at any given time and this program works out great for us. Their CustomFit website program is just that (CustomFit). In some cases, we had the need to ship boots back (because of size issues) and Lehigh quickly set up a return process on our CustomFit website to expedite the return and re-shipment, the shipping and returns are free too. I am pleased to say that not only has Lehigh helped us to meet our goals to get our employees metatarsal boots, but they have taken the customer service to the next level. Thank you!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Maura Correa, HR Administrator</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://d1jdomzv2hp689.cloudfront.net/document/data/118_894doc.gif" alt="Elkay West Corporation" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">Elkay West Corporation</h4>
+          <p class="card-text truncate3">Just wanted to give you an update on our CustomFit program. We've had the website up and running and people ordering shoes for almost 2 weeks now. I've been pleasantly surprised with the ease of the whole process! Initially I was a little concerned about people finding it difficult to navigate, but it really has turned out to be the easiest process for us. We've even had success with our Spanish speaking population. No issues to date. The return process has also been smooth. Of the 35 pairs of shoes that have been ordered so far, only 1 has been returned, and that was quick and painless as well. Thank you for all your help setting this up for us, I am a convert!</p>
+          <a href="#" data-toggle="modal" data-target="#modal8" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modal8label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal8label">Elkay West Corporation</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Just wanted to give you an update on our CustomFit program. We've had the website up and running and people ordering shoes for almost 2 weeks now. I've been pleasantly surprised with the ease of the whole process! Initially I was a little concerned about people finding it difficult to navigate, but it really has turned out to be the easiest process for us. We've even had success with our Spanish speaking population. No issues to date. The return process has also been smooth. Of the 35 pairs of shoes that have been ordered so far, only 1 has been returned, and that was quick and painless as well. Thank you for all your help setting this up for us, I am a convert!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Bill Adams, Safety, Zanesville, OH location</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://d1jdomzv2hp689.cloudfront.net/document/data/118_917doc.png" alt="AK Steel" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">AK Steel</h4>
+          <p class="card-text truncate3">Just a note to say that our online boot process with Lehigh is working very well. And any time I have a question about an order or how to make the system run smoother, Tara is extremely helpful and responds to me quickly.</p>
+          <a href="#" data-toggle="modal" data-target="#modal9" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modal9label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal9label">AK Steel</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Just a note to say that our online boot process with Lehigh is working very well. And any time I have a question about an order or how to make the system run smoother, Tara is extremely helpful and responds to me quickly.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Stacy Pitta, Human Resources Manager</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://d1jdomzv2hp689.cloudfront.net/document/data/118_895doc.jpg" alt="BWAY Corp, York PA" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">BWAY Corp, York PA</h4>
+          <p class="card-text truncate3">I have had much success with a seamless implementation in our York, PA location. We receive prompt responses and reactions to questions or concerns. I have enjoyed working with Lehigh from an administrative perspective and have received positive feedback from the employees here at the York location. Looking forward to continuing to grow our business relationship!!!</p>
+          <a href="#" data-toggle="modal" data-target="#modal10" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="modal10label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal10label">BWAY Corp, York PA</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              I have had much success with a seamless implementation in our York, PA location. We receive prompt responses and reactions to questions or concerns. I have enjoyed working with Lehigh from an administrative perspective and have received positive feedback from the employees here at the York location. Looking forward to continuing to grow our business relationship!!!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Markus Jones, HSE Sr. Specialist in the Aerospace Industry</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://d1jdomzv2hp689.cloudfront.net/document/data/118_921doc.png" alt="Rolls-Royce" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">Rolls-Royce</h4>
+          <p class="card-text truncate3">The service, selection and product quality are top notch. Lehigh’s IT group worked with us to customize a data management system which allowed for more accurate data input and reporting. Lehigh’s web-based ordering interface is specific to our company and is available 24/7 and the Lehigh Creative Team even provided iPad based kiosks as a convenient ordering alternative. Pricing is competitive, which has resulted in a substantial savings over traditional ‘brick and mortar only' retail options.</p>
+          <a href="#" data-toggle="modal" data-target="#modal11" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="modal11label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal11label">Rolls-Royce</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The service, selection and product quality are top notch. Lehigh’s IT group worked with us to customize a data management system which allowed for more accurate data input and reporting. Lehigh’s web-based ordering interface is specific to our company and is available 24/7 and the Lehigh Creative Team even provided iPad based kiosks as a convenient ordering alternative. Pricing is competitive, which has resulted in a substantial savings over traditional ‘brick and mortar only' retail options.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Joe Sentipal, Purchasing</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://d1jdomzv2hp689.cloudfront.net/document/data/118_918doc.png" alt="Auma Actuators" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">Auma Actuators</h4>
+          <p class="card-text truncate3">I wanted to shoot you a quick thank you as well for all that you did for us. The website works great, the prices are better, and the shipments are fantastic. Some people have told me that they have actually received their shoes in the next day after ordering. Thank you for suggesting that we try this rout, I would say it was a success.</p>
+          <a href="#" data-toggle="modal" data-target="#modal12" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="modal12label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal12label">Auma Actuators</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              I wanted to shoot you a quick thank you as well for all that you did for us. The website works great, the prices are better, and the shipments are fantastic. Some people have told me that they have actually received their shoes in the next day after ordering. Thank you for suggesting that we try this rout, I would say it was a success.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Amber Sinclair, HR Service Supervisor</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://d1jdomzv2hp689.cloudfront.net/document/data/118_920doc.png" alt="Emerson Process Management" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">Emerson Process Management</h4>
+          <p class="card-text truncate3">Safety is our #1 priority, so when we were looking for a safety shoe provider we made sure that our employees had access the best product, with a variety of choices and sizes, and that they could get their shoes in a short period of time. Lehigh delivered on all accounts; variety, reliability, and most importantly safety.</p>
+          <a href="#" data-toggle="modal" data-target="#modal13" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-labelledby="modal13label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal13label">Emerson Process Management</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Safety is our #1 priority, so when we were looking for a safety shoe provider we made sure that our employees had access the best product, with a variety of choices and sizes, and that they could get their shoes in a short period of time. Lehigh delivered on all accounts; variety, reliability, and most importantly safety.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">Survey Responder</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="https://d1jdomzv2hp689.cloudfront.net/document/data/118_893doc.jpg" alt="Schneider Trucking" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">Schneider Trucking</h4>
+          <p class="card-text truncate3">Employees can choose from hundreds of options that are within their budget requirements. Our shop operates 24 hours a day, 7 days a week, so the service provides an equal opportunity for all emploiyees to purchase shoes according to their schedule. It improves productivity on the shop floor. We found that employees were wasting countless time on the shoemobile. This process gets our employees back to work in a timely manner.</p>
+          <a href="#" data-toggle="modal" data-target="#modal14" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-labelledby="modal14label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal14label">Schneider Trucking</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Employees can choose from hundreds of options that are within their budget requirements. Our shop operates 24 hours a day, 7 days a week, so the service provides an equal opportunity for all emploiyees to purchase shoes according to their schedule. It improves productivity on the shop floor. We found that employees were wasting countless time on the shoemobile. This process gets our employees back to work in a timely manner.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+
+  <footer class="footer">
+  <div class="wrapper container">
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <h5>Features</h5>
+        <ul>
+          <li>100% FREE</li>
+          <li>Data exchange</li>
+          <li>Kiosk</li>
+          <li>Payroll deduction</li>
+          <li>Multi-employee ordering</li>
+          <li>Automatic notifications</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h5>About</h5>
+        <ul>
+          <li>Overview</li>
+          <li>Customers</li>
+          <li>Brands</li>
+          <li>Industries</li>
+          <li>Sales team</li>
+          <li>AR team</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h5>Services</h5>
+        <ul>
+          <li>Data exchange</li>
+          <li>Vouchers</li>
+          <li>Easy returns</li>
+          <li>Safety resources</li>
+          <li>On-site kiosk</li>
+          <li>Savings</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h5>Social</h5>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Youtube</li>
+          <li>LinkedIn</li>
+          <li>Email</li>
+          <li>Call 1-800-444-4086</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-centered">
+        <h5>Interested in a free managed safety shoe program?</h5>
+        <label for="email">Email or phone number</label>
+        <div class="input-group">
+          <input type="text" id="email" class="form-control">
+          <span class="input-group-btn">
+             <!-- <i class="material-icons">check</i> -->
+            <button class="btn btn-default color-primary" type="button">Yes <i class="material-icons ml" style="font-size: 14px; font-weight: bold;">check</i></button>
+          </span>
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container text-center">
+      &copy; <script>document.write(new Date().getFullYear());</script> Lehigh Outfitters <span class="spacer" aria-hidden="true">|</span> Privacy Policy <span class="spacer" aria-hidden="true">|</span> Terms &amp; Conditions
+    </div>
+  </div>
+</footer>
+<div class="chat-wrap">
+  <div class="chat">Click here to chat <i class="material-icons">chat_bubble</i></div>
+</div>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+    $('.truncate').tooltip();
+  })
+</script>
+
+  
+  <script src='http://localhost:4000/cf/assets/script.js' type="text/javascript"></script>
+  
+
+
+</body>
+</html>

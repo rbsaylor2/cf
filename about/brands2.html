@@ -1,0 +1,112 @@
+---
+layout: default
+---
+<div class="container lead">
+  <div class="page-header">
+    <h1>Lehigh CustomFit Brands <small>You won't find this Brand Selection of Safety Footwear on any other website</small></h1>
+  </div>
+  <p class="lead">We have more safety footwear brands conveniently available in one spot then anyone else because we know and understand the importance of brand loyalty and value. We are continuously looking for and adding brands like Rocky, Georgia Boot and Timberland PRO to ensure you receive a quality product you can rely on. In the end, it's all about providing top-notch safety and a better selection of styles and brands is one way that we do that for you. We also have a great selection of work and weekend apparel.</p>
+  <p class="lead">Because this site is access restricted to authorized users only, to view further details on each brand, you must first <a href="#">log into your account</a>.</p>
+  <h2>All Industrial and Occupational Safety Footwear</h2>
+  <style>
+    .card {
+      -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+      transition: 0.3s;
+      display: inline-block;
+      width: 33%;
+    }
+    .card:hover {
+      -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+    }
+    .card .card-content {
+      padding: 0px 20px 20px;
+    }
+    .card .card-content .card-title {
+      line-height: 30px;
+    }
+    .card .card-image {
+      height: 100px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card .card-image img {
+      max-height: 100%;
+      max-width: 100%;
+      width: auto;
+    }
+    .card .card-reveal p {
+      font-size: 1em;
+    }
+    .linkify {
+      cursor: pointer;
+      border-bottom: none;
+    }
+    .container img {
+      max-width: 100%;
+    }
+    .chip {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+      color: white;
+      height: 26px;
+      line-height: 26px;
+      border-radius: 0px;
+      border-bottom-right-radius: 4px;
+      cursor: pointer;
+    }
+    .chip2 {
+      left: 0px;
+      right: auto;
+      border-radius: 0px;
+      border-bottom-left-radius: 4px;
+    }
+    .brand-grid {
+      list-style-type: none;
+      margin: 0; padding: 0;
+    }
+    .brand-grid li {
+      display: inline;
+    }
+  </style>
+
+  <ul class="brand-grid">
+    {% for brand in site.data.brands %}
+    <li>
+      <div class="card">
+        <a href="#" data-toggle="modal" data-target="#modal{{ forloop.index }}">
+          <div class="card-body" style="text-align: center; min-height: 175px; display: flex; justify-content: space-around; flex-direction: column; align-items: center;">
+            <img src="{{ brand.image }}" alt="{{ brand.title }}" style="margin: 0.25em auto; width: auto; max-width: 150px; height: auto; max-height: 100px;">
+            <h5 class="card-title">About {{ brand.title }}</h5>
+          </div>
+        </a>
+      </div>
+      <div class="modal fade" id="modal{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="modal{{ forloop.index }}label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal{{ forloop.index }}label">{{ brand.title }}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              {{ brand.description }}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

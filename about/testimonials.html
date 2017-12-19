@@ -1,0 +1,77 @@
+---
+layout: default
+custom_js:
+- script
+---
+<style>
+.truncate3 {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 6em;
+  text-align: justify;
+  margin-right: 0em;
+  padding-right: 1em;
+  font-size: 0.8em;
+}
+.truncate3:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.truncate3:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+</style>
+<div class="container lead">
+  <div class="page-header">
+    <h1>Customer Testimonials <small>The Great Companies We Serve Have Something To Say...</small></h1>
+  </div>
+  <div class="text-center">
+    <h2 class="text-secondary">Featured Cusomer Testimonial</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_lAmb_YQ4Vo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+  <h2 class="mt-2">Lehigh CustomFit Customer Testimonials</h2>
+  <ul class="grid">
+    {% for testimonial in site.data.testimonials %}
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate">{{ testimonial.attribution }}</div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="{{ testimonial.image }}" alt="{{ testimonial.title }}" style="max-width: 100px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <h4 class="card-title truncate2">{{ testimonial.title }}</h4>
+          <p class="card-text truncate3">{{ testimonial.testimonial }}</p>
+          <a href="#" data-toggle="modal" data-target="#modal{{ forloop.index }}" class="btn btn-primary mb-2" style="display: block;">Read full review...</a>
+        </div>
+      </div>
+      <div class="modal fade" id="modal{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="modal{{ forloop.index }}label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal{{ forloop.index }}label">{{ testimonial.title }}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              {{ testimonial.testimonial }}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
