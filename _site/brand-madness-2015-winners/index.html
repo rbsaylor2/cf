@@ -78,7 +78,7 @@
           <button type="submit" class="btn btn-default">Submit</button>
         </form> -->
         <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" href="#" data-toggle="popover" data-placement="bottom" data-trigger="click" title="Login" data-content="<form>
+          <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" href="#" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-constraints="hover focus" title="Login" data-content="<form>
               <div class='form-group'>
                 <label for='exampleInputEmail1'>Account</label>
                 <input type='email' class='form-control' id='exampleInputEmail1' aria-describedby='emailHelp' placeholder='Example: 028533'>
@@ -197,7 +197,24 @@ Phone: <strong>800-444-4086 ext. 2456</strong>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <script>
   $(function () {
-    $('[data-toggle="popover"]').popover()
+    $('[data-toggle="popover"]').popover({
+      trigger: "manual",
+      html: true,
+      animation: false
+    }).on("mouseenter", function() {
+      var _this = this;
+      $(this).popover("show");
+      $(".popover").on("mouseleave", function () {
+        $(_this).popover('hide');
+      });
+    }).on("mouseleave", function () {
+      var _this = this;
+      setTimeout(function () {
+        if (!$(".popover:hover").length) {
+          $(_this).popover("hide");
+        }
+      }, 50);
+    });
     $('.truncate').tooltip();
   })
 </script>

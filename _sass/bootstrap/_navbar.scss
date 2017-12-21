@@ -62,6 +62,11 @@
 //
 // Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).
 
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  top: 100%;
+}
+
 .navbar-nav {
   display: flex;
   flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
