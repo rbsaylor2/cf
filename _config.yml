@@ -39,3 +39,8 @@ collections_dir: collections
 collections:
   news:
     output: true
+
+defaults:
+  -
+    values:
+      layout: "default"

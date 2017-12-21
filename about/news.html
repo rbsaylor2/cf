@@ -1,7 +1,4 @@
 ---
-layout: default
-custom_js:
-- script
 ---
 <style>
 .truncate3 {
@@ -35,30 +32,22 @@ custom_js:
     <h1>News &amp; Events</h1>
   </div>
   <ul class="grid">
-    {% for testimonial in site.data.testimonials %}
+    {% for post in site.posts %}
     <li>
+      <!-- <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+      <p><small><strong>{{ post.date | date: "%Y %B" }}</strong> . {{ post.category }} . <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"></a></small></p> -->
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate2">{{ post.title }}<br><small>{{ post.date | date: "%Y %B" }}</small></div>
+        <div class="card-body">
+          <div style="min-height: 100px; display: flex; justify-content: center; align-items: center;">
+            <img src="{{ post.image }}" alt="{{ post.title }}" style="max-width: 200px; max-height: 100px; display: block; margin: 0.5em auto 0;">
+          </div>
+          <!-- <h4 class="card-title truncate2">{{ post.title }}</h4> -->
+          <div class="card-text truncate3">{{ post.content }}</div>
+          <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="btn btn-primary mb-2" style="display: block;">Read more...</a>
+        </div>
+      </div>
     </li>
     {% endfor %}
   </ul>
 </div>
-
-
-
-{% for collection in site.collections %}
-
-  {% assign name = collection.label %}
-
-  <section>
-    <h1>{{ name }}</h1>
-
-    {% for page in site.[name] %}
-    <article>
-      <h2>{{ page.title }}</h2>
-      [Some Link]({{ site.url }}{{ site.baseurl }}{% post_url 2017-11-01-blue-diamond-growers-safety-award %})
-      <p>{{ page.content | markdownify }}</p>
-    </article>
-    {% endfor %}
-
-  </section>
-
-{% endfor %}
