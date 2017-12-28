@@ -6727,6 +6727,9 @@ nav.bg-dark {
   align-items: center;
   margin: 1em 0 0.5em; }
 
+.question {
+  font-weight: bold; }
+
 .quote-source {
   color: #666; }
 
