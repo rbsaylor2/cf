@@ -6742,6 +6742,9 @@ nav.bg-dark {
   .truncate .material-icons {
     font-size: 1em; }
 
+.truncate2 {
+  min-height: 4.5em; }
+
 .cats {
   float: left;
   box-sizing: border-box;

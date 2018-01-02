@@ -35,10 +35,10 @@ sass:
   sass_dir: _sass
 permalink: /:categories/:title/
 
-collections_dir: collections
 collections:
-  news:
+  articles:
     output: true
+    permalink: /resources/:collection/:path/
 
 defaults:
   -
