@@ -1923,10 +1923,14 @@ tbody.collapse.show {
   background: none;
   border: 0; }
   .dropdown-item:focus, .dropdown-item:hover {
-    color: #16181b;
+    color: #fff;
     text-decoration: none;
-    background-color: #f8f9fa; }
+    background-color: #212121; }
   .dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #212121; }
+  .dropdown-item.hover, .dropdown-item:hover {
     color: #fff;
     text-decoration: none;
     background-color: #212121; }
@@ -6398,7 +6402,8 @@ nav .btn {
   margin-bottom: -0.25em; }
 
 nav.bg-dark {
-  background: #212121 !important; }
+  background: #212121 !important;
+  padding-bottom: 0; }
 
 .center {
   text-align: center;
