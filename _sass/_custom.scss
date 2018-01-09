@@ -152,6 +152,9 @@ footer {
   .copyright {
     background: #111;
   }
+  a, a:hover, a:link {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 .form-control, #email, .nav .btn {
   border: none;

@@ -3,6 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
+title: CustomFit - Managed Safety Shoe Programs
 ---
 <div class="hero">
   <div class="container">
@@ -15,8 +16,8 @@ layout: default
           CustomFit provides a fast, free, and friendly safety footwear program which provides you the tools you’ll need to ensure your employees are comfortable, confident, and most importantly safe on the job. With your custom website being available from a phone, computer, on-site kiosk, or even integrated subsidy or payroll deduction and offering over 60 brands and 3000 styles, managing your safety footwear program has never been so easy.
         </p>
         <!-- <p class="lead mb-4">As the leader in safety footwear programs, we offer the tools you'll need to ensure your employees are comfortable, confident, and most importantly safe on the job. With over 60 brands &amp; 2000 shoes, free shipping &amp; returns, and a custom website, managing your safety footwear program has never been so easy.</p> -->
-        <button class="btn btn-lg color-primary" style="display:inline;">View Demo</button>
-        <button class="btn btn-lg" style="display:inline;">Learn More</button>
+        <a href="#" class="btn btn-lg color-primary" style="display:inline;">View Demo</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/about/overview/" class="btn btn-lg btn-light" style="display:inline;">Learn More</a>
       </div>
       <!-- <div class="hero2 col-sm-12 col-md-4">
         <form class="form-wrapper" action="">
@@ -102,12 +103,12 @@ layout: default
   <div class="container">
     <h2 class="header-home mt-4">Save Time With These CustomFit Features</h2>
     <ul class="mb-4">
-      <li><a href="#">Data Management<img src="https://placehold.it/200x100" alt=""></a></li>
-      <li><a href="#">On-Site Kiosks<img src="https://placehold.it/200x100" alt=""></a></li>
-      <li><a href="#">Vouchers<img src="https://placehold.it/200x100" alt=""></a></li>
-      <li><a href="#">Subsidy & Payroll Deduction<img src="https://placehold.it/200x100" alt=""></a></li>
-      <li><a href="#">Multi-Employee Ordering<img src="https://placehold.it/200x100" alt=""></a></li>
-      <li><a href="#">Automatic Email Notifications<img src="https://placehold.it/200x100" alt=""></a></li>
+      <li><a href="{{ site.url }}{{ site.baseurl }}/services/data-exchange/">Data Management<img src="https://i.imgur.com/0xjhDA4.jpg" alt=""></a></li>
+      <li><a href="{{ site.url }}{{ site.baseurl }}/services/kiosks/">On-Site Kiosks<img src="https://i.imgur.com/BGee5jI.jpg" alt=""></a></li>
+      <li><a href="{{ site.url }}{{ site.baseurl }}/services/vouchers/">Vouchers<img src="https://i.imgur.com/S7r1nIZ.jpg" alt=""></a></li>
+      <li><a href="{{ site.url }}{{ site.baseurl }}/services/ordering-options/">Subsidy & Payroll Deduction<img src="https://i.imgur.com/DqALL1e.jpg" alt=""></a></li>
+      <li><a href="{{ site.url }}{{ site.baseurl }}/services/ordering-options/">Multi-Employee Ordering<img src="https://i.imgur.com/FOhkwYk.jpg" alt=""></a></li>
+      <li><a href="{{ site.url }}{{ site.baseurl }}/services/data-exchange/">Automatic Email Notifications<img src="https://i.imgur.com/Z4JIhVX.jpg" alt=""></a></li>
     </ul>
   </div>
 </div>

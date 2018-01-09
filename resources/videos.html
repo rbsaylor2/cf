@@ -1,0 +1,146 @@
+---
+title: CustomFit Videos
+---
+<div class="container bs">
+  <div class="page-header">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <h2>What is Lehigh CustomFit?</h2>
+      <div class="youtube" data-embed="AQgRDXZx04k">
+        <div class="play-button"></div>
+      </div>
+      <p>Lehigh's answer to the inefficient and poor selection of a shoe truck is a comprehensive online safety footwear and apparel program that meets and accommodates all of your company's unique and specific needs with your own user-friendly, convenient product website as well as tracking and analytic tools for more efficient management.</p>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h2>The CustomFit Kiosk</h2>
+      <div class="youtube" data-embed="db0BEJZifD4">
+        <div class="play-button"></div>
+      </div>
+      <p>As if saving money wasn't exciting enough, now you can give your employees access to your CustomFit website of safety footwear at their convenience 24/7 via our CustomFit iPad Kiosk installed onsite. Check out our options to learn what best fits your location and take your corporate safety program one step farther.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <h2>Data Exchange</h2>
+      <div class="youtube" data-embed="XQMn_hwyXj0">
+        <div class="play-button"></div>
+      </div>
+      <p>Supplying Lehigh CustomFit with your employee data will help you better manage your safety footwear program by viewing stats, orders, purchases, returns and more within Command Center for accurate record keeping and compliance.</p>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h2>Data Exchange File Management</h2>
+      <div class="youtube" data-embed="WgecSZyaIc8">
+        <div class="play-button"></div>
+      </div>
+      <p>Step-by-step instructions on how to upload and customize your individual or list of employees into our system so that you have convenient and easy reporting, tracking and control to better manage your safety shoes program. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <h2>Command Center</h2>
+      <div class="youtube" data-embed="zuR56sFWMSA">
+        <div class="play-button"></div>
+      </div>
+      <p>Each of our CustomFit websites is created with Command Center - a multi-custom online tool accessed by the primary account contact to help him/her know how their safety shoes program is running by utilizing 3 main administrative features: program management, reporting and branding options. Be in command of your safety footwear program.</p>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h2>Kiosk Benefits</h2>
+      <div class="youtube" data-embed="BsgM5kJWUPI">
+        <div class="play-button"></div>
+      </div>
+      <p>Check out our kiosk demonstration at the 2014 NRA show which highlights convenient 24/7 access for all of your employees to your safety footwear program. No more limited safety shoe truck or shoe mobiles. No more shoe store-to-store driving and comparing. Your employees will get it done fast, easy and hassle-free.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <h2>Partner With Lehigh CustomFit</h2>
+      <div class="youtube" data-embed="4nK6mPVhsng">
+        <div class="play-button"></div>
+      </div>
+      <p>Employee safety is top priority and safety shoes are important! We bet the way you and your workers are getting your safety boots now is really expensive and unnecessarily hard and time consuming. Don't wait in line at a limited-selection safety shoe truck or store. Watch how simple and easy it is to get a CustomFit Safety Shoe Program.</p>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h2>Vintage Monty Python Safety Shoe Ad</h2>
+      <div class="youtube" data-embed="64fY4KETdcw">
+        <div class="play-button"></div>
+      </div>
+      <p>In 1965 Lehigh Safety Shoes, now Lehigh Outfitters, had a sales pitch created for the then relatively new safety shoe market. The result was this quirky series of animations and demonstrations. Although the whole thing is pretty quirky, we laugh every time we watch it. Above is part 1. For Parts 2 and 3, please check out LehighTV.</p>
+    </div>
+  </div>
+</div>
+<script>
+( function() {
+  var youtube = document.querySelectorAll( ".youtube" );
+  for (var i = 0; i < youtube.length; i++) {
+    var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
+    var image = new Image();
+    image.src = source;
+    image.addEventListener( "load", function() {
+      youtube[ i ].appendChild( image );
+    }( i ) );
+    youtube[i].addEventListener( "click", function() {
+      var iframe = document.createElement( "iframe" );
+      iframe.setAttribute( "frameborder", "0" );
+      iframe.setAttribute( "allowfullscreen", "" );
+      iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+      this.innerHTML = "";
+      this.appendChild( iframe );
+    } );
+  };
+} )();
+</script>
+<style>
+.youtube {
+    background-color: #000;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.youtube img {
+    width: 100%;
+    top: -16.84%;
+    left: 0;
+    opacity: 0.7;
+}
+.youtube .play-button {
+    width: 90px;
+    height: 60px;
+    background-color: #333;
+    box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+.youtube .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26.0px;
+    border-color: transparent transparent transparent #fff;
+}
+.youtube img,
+.youtube .play-button {
+    cursor: pointer;
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+    position: absolute;
+}
+.youtube .play-button,
+.youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d( -50%, -50%, 0 );
+}
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+</style>

@@ -1895,7 +1895,7 @@ tbody.collapse.show {
   float: left;
   min-width: 10rem;
   padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
+  margin: 0;
   font-size: 1rem;
   color: #212529;
   text-align: left;
@@ -2401,6 +2401,8 @@ tbody.collapse.show {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap; }
+  .navbar-brand img {
+    height: 50px !important; }
   .navbar-brand:focus, .navbar-brand:hover {
     text-decoration: none; }
 
@@ -6388,6 +6390,8 @@ footer {
     font-weight: bold; }
   footer .copyright {
     background: #111; }
+  footer a, footer a:hover, footer a:link {
+    color: rgba(255, 255, 255, 0.6); }
 
 .form-control, #email, .nav .btn {
   border: none; }

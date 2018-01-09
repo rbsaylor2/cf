@@ -39,6 +39,9 @@ collections:
   articles:
     output: true
     permalink: /resources/:collection/:path/
+  blogs:
+    output: true
+    permalink: /resources/:collection/:path/
 
 defaults:
   -

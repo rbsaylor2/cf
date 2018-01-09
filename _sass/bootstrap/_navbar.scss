@@ -52,6 +52,10 @@
   line-height: inherit;
   white-space: nowrap;
 
+  img {
+    height: 50px !important;
+  }
+
   @include hover-focus {
     text-decoration: none;
   }

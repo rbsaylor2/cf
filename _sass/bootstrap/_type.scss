@@ -110,6 +110,8 @@ mark,
 .blockquote {
   margin-bottom: $spacer;
   font-size: $blockquote-font-size;
+  // border-left: 6px solid #bed600;
+  // padding-left: 1em;
 }
 
 .blockquote-footer {

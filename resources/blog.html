@@ -1,0 +1,47 @@
+---
+title: CustomFit Blog
+---
+<style>
+  .truncate3 {
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 6em;
+    text-align: justify;
+    margin-right: 0em;
+    padding-right: 1em;
+    font-size: 0.8em;
+  }
+  .truncate3:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .truncate3:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
+  }
+</style>
+<div class="container bs">
+  <div class="page-header">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <ul class="grid">
+    {% for blog in site.blogs %}
+    <li>
+      <div class="card bg-light mb-3">
+        <div class="card-header truncate2">{{ blog.title }}</div>
+        <div class="card-body text-center">
+          <a href="{{ site.url }}{{ site.baseurl }}{{ blog.url }}" class="btn btn-primary" style="margin: 1em auto;">Read Article</a>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
